@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+default_dotfiles_dir = os.path.join(os.environ["HOME"], "dotfiles")
+dotfiles_dir = os.environ.get("DOTFILES_DIR", default_dotfiles_dir)
+
+usage_msg = """Usage: dotlink [file]
+
+	Examples:
+	dotlink .zshrc
+	dotlink .config/nvim
+	To symlink dotlink to $HOME/.local/bin, use 'dotlink install'.
+"""
+
+def main():
+    if len(sys.argv) == 1:
+        print(usage_msg)
+        sys.exit(0)
+    elif sys.argv[1] == "install":
+        install()
+    else:
+        link()
+
+def install():
+    dotlink_cmd_src_path = os.path.join(dotfiles_dir, "dotlink")
+    dotlink_cmd_dest_dir = os.path.join(os.environ["HOME"], ".local", "bin")
+    dotlink_cmd_dest_path = os.path.join(dotlink_cmd_dest_dir, "dotlink")
+
+    if (not os.path.exists(dotlink_cmd_dest_dir)):
+        os.mkdir(dotlink_cmd_dest_dir)
+    os.symlink(dotlink_cmd_src_path, dotlink_cmd_dest_path)
+
+def link():
+    dotfile_name = sys.argv[1]
+    dotfile_src_path = os.path.join(dotfiles_dir, dotfile_name)
+    dotfile_dest_path = os.path.join(os.environ["HOME"], dotfile_name)
+    if (os.path.exists(dotfile_dest_path)):
+        print("Can't override existing file %s" %dotfile_dest_path)
+    else:
+        os.symlink(dotfile_src_path, dotfile_dest_path)
+
+if __name__ == "__main__":
+    main()

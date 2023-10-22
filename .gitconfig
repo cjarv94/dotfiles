@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = cjarville4@gmail.com
+	name = thirdpartyprogrammer
+[pull]
+	rebase = false
