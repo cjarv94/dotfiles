@@ -21,7 +21,12 @@ require "dep" {
 			nm('ga', '<cmd>lua vim.lsp.buf.code_action()<CR>')
 			nm('gR', '<cmd>lua vim.lsp.buf.rename()<CR>')
 			nm('gD', '<cmd>lua vim.lsp.buf.declaration()<cr>')
+
+			local lspconfig = require('lspconfig')
+			local coq = require("coq")
+			lspconfig.clangd.setup(coq.lsp_ensure_capabilities({}))
 		end,
+		requires = "ms-jpq/coq_nvim",
 	},
 
 	-- File Management
