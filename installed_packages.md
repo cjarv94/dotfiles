@@ -25,6 +25,7 @@ See `installed_packages` file for raw data.
 - pkg-config
 - bat
 - tree
+- xsel
 
 ## System
 

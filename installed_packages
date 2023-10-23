@@ -9,6 +9,7 @@ curl
 pkg-config
 bat
 tree
+xsel
 libglfw3
 libglfw3-dev
 libsdl2-2.0-0
