@@ -4,39 +4,49 @@ See `installed_packages` file for raw data.
 
 ## Desktop Environment
 
-- i3 (window manager)
-- alacritty (terminal)
+### Base
+
+- i3
 - xinit
 
-## Video Drivers
+### Applications
+
+- firefox
+- alacritty
+- pavucontrol
+- neovim
+- htop
+
+### Shell
+
+- zsh
+- git
+- curl
+- pkg-config
+- bat
+- tree
+
+## System
+
+## C Libraries
+- libglfw3
+- libglfw3-dev
+- libsdl2-2.0-0
+- libsdl2-dev
+- libsdl2-image-2.0-0
+- libsdl2-image-dev
+
+### Audio
+
+- pulseaudio
+
+### Video Drivers
 
 - firmware-amd-graphics
 - libgl1-mesa-dri
 - libglx-mesa0
 - mesa-vulkan-drivers
 - xserver-xorg-video-all
-
-## 32-bit Video Drivers
-
 - libglx-mesa0:i386
 - mesa-vulkan-drivers:i386
 - libgl1-mesa-dri:i386
-
-## Development Tools
-
-- git
-- zsh
-
-## GUI Applications
-
-- firefox
-- pavucontrol
-
-## CLI Tools
-
-- neovim
-- htop
-
-## Audio Management
-
-- pulseaudio

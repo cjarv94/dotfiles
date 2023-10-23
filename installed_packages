@@ -1,6 +1,21 @@
 i3
-alacritty
 xinit
+firefox
+alacritty
+pavucontrol
+neovim
+htop zsh git
+curl
+pkg-config
+bat
+tree
+libglfw3
+libglfw3-dev
+libsdl2-2.0-0
+libsdl2-dev
+libsdl2-image-2.0-0
+libsdl2-image-dev
+pulseaudio
 firmware-amd-graphics
 libgl1-mesa-dri
 libglx-mesa0
@@ -9,10 +24,3 @@ xserver-xorg-video-all
 libglx-mesa0:i386
 mesa-vulkan-drivers:i386
 libgl1-mesa-dri:i386
-git
-zsh
-firefox
-pavucontrol
-neovim
-htop
-pulseaudio
