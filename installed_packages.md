@@ -26,6 +26,8 @@ See `installed_packages` file for raw data.
 - bat
 - tree
 - xsel
+- tmux
+- byobu
 
 ## System
 
