@@ -18,6 +18,8 @@ libsdl2-2.0-0
 libsdl2-dev
 libsdl2-image-2.0-0
 libsdl2-image-dev
+libpam0g-dev
+libxcb-xkb-dev
 pulseaudio
 firmware-amd-graphics
 libgl1-mesa-dri

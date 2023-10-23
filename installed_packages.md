@@ -38,6 +38,8 @@ See `installed_packages` file for raw data.
 - libsdl2-dev
 - libsdl2-image-2.0-0
 - libsdl2-image-dev
+- libpam0g-dev (ly dependency)
+- libxcb-xkb-dev (ly dependency)
 
 ### Audio
 
