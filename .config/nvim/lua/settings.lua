@@ -31,3 +31,4 @@ opt.undodir= os.getenv("HOME") .. "/.config/nvim/undodir"
 opt.clipboard = 'unnamedplus' -- Use system clipboard
 
 opt.foldmethod = 'syntax'
+opt.foldenable = false
