@@ -4,11 +4,10 @@ require "helpers/keyboard"
 require "dep" {
 	-- Aesthetics
 	{
-		"sainnhe/sonokai",
+		"nordtheme/vim",
 		function()
-			g.sonokai_style = "shusia"
 			g.termguicolors = true
-			cmd [[ colorscheme sonokai ]]
+			cmd [[ colorscheme nord ]]
 		end,
 	},
 	"luochen1990/rainbow",
