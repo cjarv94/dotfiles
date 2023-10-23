@@ -4,10 +4,13 @@ require "helpers/keyboard"
 require "dep" {
 	-- Aesthetics
 	{
-		"nordtheme/vim",
+		"sainnhe/everforest",
 		function()
-			g.termguicolors = true
-			cmd [[ colorscheme nord ]]
+			opt.termguicolors = true
+			opt.background = 'dark'
+			g.everforest_background = 'hard'
+			
+			cmd [[ colorscheme everforest ]]
 		end,
 	},
 	"luochen1990/rainbow",
