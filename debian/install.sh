@@ -33,7 +33,7 @@ sudo apt install i3 \
 	iwd
 
 # Install exfat support
-sudo apt install exfat-fuse exfat-progs
+sudo apt install exfat-fuse exfatprogs
 
 # Install ntfs support
 sudo apt install ntfs-3g
