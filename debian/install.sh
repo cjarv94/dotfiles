@@ -30,6 +30,12 @@ sudo apt install i3 \
 	byobu \
 	pulseaudio
 
+# Install exfat support
+sudo apt install exfat-fuse exfat-progs
+
+# Install ntfs support
+sudo apt install ntfs-3g
+
 # Install graphics drivers
 sudo apt install firmware-amd-graphics \
 	libgl1-mesa-dri \
