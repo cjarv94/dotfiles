@@ -65,18 +65,21 @@ git clone https://github.com/fairyglade/ly/archive/refs/tags/v0.6.0.tar.gz
 cd ly
 make && sudo make install installsystemd
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # Enable services
 systemctl enable --user --now pulseaudio
 sudo systemctl enable ly
 
 # Link dotfiles
 cd ~/dotfiles
-./dotlink .zshrc
 ./dotlink .config/alacritty
 ./dotlink .config/nvim
 ./dotlink .config/i3
 ./dotlink .gitconfig
 ./dotlink install
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Remove the provided zshrc and link ours
+rm -rf ~/.zshrc
+./dotlink .zshrc
