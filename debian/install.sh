@@ -51,7 +51,7 @@ sudo apt install firmware-amd-graphics \
 # Install cascadia code font
 mkdir -p ~/Downloads/cascadia-code
 cd ~/Downloads/cascadia-code
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/latest/CascadiaCode.tar.xz
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.tar.xz
 tar -xf CascadiaCode.tar.xz
 rm -rf CascadiaCode.tar.xz
 cd ..
@@ -75,6 +75,7 @@ cd ~/dotfiles
 ./dotlink .config/nvim
 ./dotlink .config/i3
 ./dotlink .gitconfig
+./dotlink .tmux.conf
 ./dotlink install
 
 # Install oh-my-zsh
