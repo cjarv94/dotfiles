@@ -19,7 +19,7 @@ nm("<Leader>f", ":Lexplore 20<CR>")                                 -- Open file
 
 -- Highlighting mappings
 --
-nm("<C-n>", ":nohlsearch")
+nm("<C-n>", ":nohlsearch<CR>")
 
 -- Terminal mappings
 --
