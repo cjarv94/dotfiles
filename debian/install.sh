@@ -19,6 +19,7 @@ sudo apt install i3 \
 	pavucontrol \
 	neovim \
 	htop \
+	rtorrent \
 	zsh \
 	git \
 	curl \
