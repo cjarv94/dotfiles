@@ -25,6 +25,7 @@ sudo apt install i3 \
 	git \
 	curl \
 	pkg-config \
+	python3.11-venv \
 	bat \
 	tree \
 	xsel \
