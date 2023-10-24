@@ -70,4 +70,16 @@ require "dep" {
 
 	-- Git
 	"tpope/vim-fugitive",
+
+	-- Tmux
+	{
+		"aserowy/tmux.nvim",
+		function()
+			require('tmux').setup {
+				copy_sync = {
+					sync_clipboard = false, -- Already doing this
+				},
+			}
+		end
+	},
 }

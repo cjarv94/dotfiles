@@ -3,14 +3,6 @@ require "helpers/keyboard"
 
 g.mapleader = ','
 
--- Movement/window mappings --
---
-nm("<C-h>", "<C-w><C-h>")                                           -- Move to a left pane
-nm("<C-j>", "<C-w><C-j>")                                           -- Move to a bottom pane
-nm("<C-k>", "<C-w><C-k>")                                           -- Move to a top pane
-nm("<C-l>", "<C-w><C-l>")                                           -- Move to a right pane
-nm("<C-n>", ":nohlsearch<CR>")                                      -- Clear highlighting temporarily
-
 -- Config file mappings --
 --
 local lua_config_dir = os.getenv("HOME") .. "/.config/nvim/lua/"
