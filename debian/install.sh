@@ -61,7 +61,7 @@ fc-cache
 # Install ly
 sudo apt install libxcb-xkb-dev libpam0g-dev
 cd ~/Downloads
-git clone https://github.com/fairyglade/ly/archive/refs/tags/v0.6.0.tar.gz
+git clone --recurse-submodules https://github.com/fairyglade/ly.git
 cd ly
 make && sudo make install installsystemd
 
