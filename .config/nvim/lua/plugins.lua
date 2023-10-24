@@ -82,4 +82,10 @@ require "dep" {
 			}
 		end
 	},
+	{
+		"palardy/vim-slime",
+		setup = function()
+			g.slime_target = "tmux"
+		end
+	},
 }
