@@ -24,6 +24,7 @@ sudo apt install i3 \
 	zsh \
 	git \
 	curl \
+	build-essential \
 	pkg-config \
 	python3.11-venv \
 	bat \
