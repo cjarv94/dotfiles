@@ -29,7 +29,8 @@ sudo apt install i3 \
 	xsel \
 	tmux \
 	byobu \
-	pulseaudio
+	pulseaudio \
+	iwd
 
 # Install exfat support
 sudo apt install exfat-fuse exfat-progs
