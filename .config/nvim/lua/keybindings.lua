@@ -17,6 +17,10 @@ nm("<S-h>", ":tabprev<CR>")                                         -- Switch to
 nm("<S-l>", ":tabnext<CR>")                                         -- Switch to right tab
 nm("<Leader>f", ":Lexplore 20<CR>")                                 -- Open file explorer
 
+-- Highlighting mappings
+--
+nm("<C-n>", ":nohlsearch")
+
 -- Terminal mappings
 --
 nm("tt", ":terminal<CR>")                                           -- Open a terminal
