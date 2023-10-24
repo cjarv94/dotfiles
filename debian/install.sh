@@ -68,6 +68,11 @@ git clone --recurse-submodules https://github.com/fairyglade/ly.git
 cd ly
 make && sudo make install installsystemd
 
+# Install multimc
+cd ~/Downloads
+wget https://files.multimc.org/downloads/multimc_1.6-1.deb
+sudo apt install ./multimc_1.6-1.deb
+
 # Enable services
 systemctl enable --user --now pulseaudio
 sudo systemctl enable ly
