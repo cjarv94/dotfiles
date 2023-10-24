@@ -14,7 +14,7 @@ sudo apt update
 # Install applications
 sudo apt install i3 \
 	xinit \
-	firefox \
+	firefox-esr \
 	alacritty \
 	pavucontrol \
 	neovim \
