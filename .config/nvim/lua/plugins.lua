@@ -83,7 +83,7 @@ require "dep" {
 		end
 	},
 	{
-		"palardy/vim-slime",
+		"jpalardy/vim-slime",
 		setup = function()
 			g.slime_target = "tmux"
 		end
