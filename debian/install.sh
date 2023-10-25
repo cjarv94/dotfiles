@@ -14,6 +14,7 @@ sudo apt update
 # Install applications
 sudo apt install i3 \
 	xinit \
+	picom \
 	firefox-esr \
 	alacritty \
 	pavucontrol \

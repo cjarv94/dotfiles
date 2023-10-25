@@ -153,3 +153,6 @@ font:
     style: Bold Italic
 
   size: 20
+
+window:
+  opacity: 0.9
