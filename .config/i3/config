@@ -23,14 +23,6 @@ set $ws10 "10"
 # Set font
 font pango:CaskaydiaCove NFM 20
 
-# Add gaps
-gaps inner 5px
-gaps outer 5px
-
-# Disable title bar
-default_border pixel 1
-default_floating_border pixel 1
-
 # -------
 # Startup
 # -------
