@@ -128,3 +128,11 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# -----
+# i3bar
+# -----
+bar {
+	position top
+	status_command i3status
+}
