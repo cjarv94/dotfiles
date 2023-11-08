@@ -83,6 +83,10 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
+# Move windows to/from scratchpad
+bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+minus move scratchpad
+
 # Set the next window's split alignment
 bindsym $mod+c split h
 bindsym $mod+v split v
