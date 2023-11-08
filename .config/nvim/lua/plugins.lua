@@ -4,13 +4,14 @@ require "helpers/keyboard"
 require "dep" {
 	-- Aesthetics
 	{
-		"sainnhe/everforest",
+		"sainnhe/gruvbox-material",
 		function()
 			opt.termguicolors = true
 			opt.background = 'dark'
-			g.everforest_background = 'hard'
+			g.gruvbox_material_background = 'hard'
+			g.gruvbox_material_foreground = 'mix'
 			
-			cmd [[ colorscheme everforest ]]
+			cmd [[ colorscheme gruvbox-material ]]
 		end,
 	},
 	"luochen1990/rainbow",
