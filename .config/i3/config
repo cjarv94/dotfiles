@@ -23,6 +23,8 @@ set $ws10 "10"
 # Set font
 font pango:CaskaydiaCove NFM 20
 
+default_border pixel 1
+default_floating_border pixel 1
 
 # Set colors
 # from https://i3wm.org/docs/userguide.html#client_colors
