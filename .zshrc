@@ -31,6 +31,11 @@ export EDITOR='nvim'
 
 alias s="source  $HOME/.zshrc"
 
+# ruby
+
+export GEM_HOME="$(gem env user_gemhome)"
+
 # path
 
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$GEM_HOME
