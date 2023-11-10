@@ -65,6 +65,7 @@ bindsym $mod+o exec --no-startup-id pavucontrol
 bindsym $mod+p exec --no-startup-id rofi -show run
 bindsym $mod+Shift+p exec --no-startup-id rofi -show drun
 bindsym $mod+semicolon exec --no-startup-id rofi -show window
+bindsym $mod+Shift+b exec --no-startup-id blueman-manager
 
 # Kill window
 bindsym $mod+Shift+q kill
