@@ -4,14 +4,11 @@ require "helpers/keyboard"
 require "dep" {
 	-- Aesthetics
 	{
-		"sainnhe/gruvbox-material",
+		"Mofiqul/vscode.nvim",
 		function()
 			opt.termguicolors = true
 			opt.background = 'dark'
-			g.gruvbox_material_background = 'hard'
-			g.gruvbox_material_foreground = 'mix'
-			
-			cmd [[ colorscheme gruvbox-material ]]
+			cmd [[ colorscheme vscode ]]
 		end,
 	},
 	"luochen1990/rainbow",
