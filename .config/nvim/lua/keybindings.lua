@@ -1,8 +1,6 @@
 require "helpers/globals"
 require "helpers/keyboard"
 
-g.mapleader = ','
-
 -- Config file mappings --
 --
 local lua_config_dir = os.getenv("HOME") .. "/.config/nvim/lua/"
@@ -15,7 +13,6 @@ nm("<Leader>ev", ":tabedit " .. lua_config_dir .. "<CR>")          -- Source vim
 nm("<Leader>t", ":tabnew<CR>")                                      -- Open a new tab
 nm("<S-h>", ":tabprev<CR>")                                         -- Switch to left tab
 nm("<S-l>", ":tabnext<CR>")                                         -- Switch to right tab
-nm("<Leader>f", ":Lexplore 20<CR>")                                 -- Open file explorer
 
 -- Highlighting mappings
 --
