@@ -151,6 +151,9 @@ return {
 	-- Odin
 	"Tetralux/odin.vim",
 
+	-- Nim
+	"alaviss/nim.nvim",
+
 	-- Debugging
 	{
 		"tpope/vim-dispatch",

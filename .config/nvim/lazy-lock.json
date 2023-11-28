@@ -1,9 +1,9 @@
 {
   "bufferline.nvim": { "branch": "main", "commit": "9e8d2f695dd50ab6821a6a53a840c32d2067a78a" },
   "coq_nvim": { "branch": "coq", "commit": "d4a58fa7ab20c928f88e416b3fcf6ada965bf314" },
-  "ctrlp.vim": { "branch": "master", "commit": "564176f01d7f3f7f8ab452ff4e1f5314de7b0981" },
   "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
   "lualine.nvim": { "branch": "master", "commit": "2248ef254d0a1488a72041cfb45ca9caada6d994" },
+  "nim.nvim": { "branch": "master", "commit": "076239e8869e3e9b061b17cbca2cea2df73d5f92" },
   "nvim-autopairs": { "branch": "master", "commit": "0f04d78619cce9a5af4f355968040f7d675854a1" },
   "nvim-lspconfig": { "branch": "master", "commit": "e4a56adbc51c55964253dce4505cec55c82c1c04" },
   "nvim-treesitter": { "branch": "master", "commit": "b056e4227b1c5d3ecfe96941352364c0c10668df" },
