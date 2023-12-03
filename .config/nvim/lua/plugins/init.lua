@@ -159,7 +159,7 @@ return {
 		"tpope/vim-dispatch",
 		lazy = true,
 		keys = {
-			{ "<Leader>,", ":Start<CR>", desc = "Foreground Build", },
+			{ "<Leader>,", ":Dispatch<CR>", desc = "Foreground Build", },
 			{ "<Leader>.", ":Dispatch!<CR>", desc = "Background Build", },
 		},
 	},
