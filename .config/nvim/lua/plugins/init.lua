@@ -71,18 +71,14 @@ return {
 	},
 
 	-- LSP
-	{ 
-		"ms-jpq/coq_nvim",
-		lazy = true, -- only loads when depended on
-	},
 	{
 		"neovim/nvim-lspconfig",
 		lazy = false,
 		config = function()
 			local lspconfig = require('lspconfig')
-			local coq = require("coq")
-			lspconfig.clangd.setup(coq.lsp_ensure_capabilities({}))
-			lspconfig.ols.setup(coq.lsp_ensure_capabilities({}))
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			lspconfig.clangd.setup({ capabilities = capabilities })
+			lspconfig.ols.setup({ capabilities = capabilities })
 		end,
 		keys = {
 			{ 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', desc = "Show LSP Info", },
@@ -90,7 +86,49 @@ return {
 			{ 'gR', '<cmd>lua vim.lsp.buf.rename()<CR>', desc = "LSP Rename", },
 			{ 'gd', '<cmd>lua vim.lsp.buf.declaration()<CR>', desc = "LSP Go-to-declaration", },
 		},
-		dependencies = { "ms-jpq/coq_nvim" },
+		dependencies = { "hrsh7th/cmp-nvim-lsp" },
+	},
+	{
+		"folke/trouble.nvim",
+		lazy = false,
+		keys = {
+			{ '<Leader>q', ':TroubleToggle<CR>', desc = "Show errors/warnings via Trouble", },
+		},
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
+	
+	-- Completions
+	{
+		"hrsh7th/nvim-cmp",
+		lazy = false,
+		dependencies = {
+			"hrsh7th/cmp-buffer",
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-cmdline",
+			"dcampos/nvim-snippy",
+			"dcampos/cmp-snippy",
+			"honza/vim-snippets",
+		},
+		config = function()
+			local cmp = require("cmp")
+
+			cmp.setup({
+				snippet = {
+					expand = function(args)
+						require("snippy").expand_snippet(args.body)
+					end,
+				},
+				sources = cmp.config.sources({
+					{ name = "snippy" },
+					{ name = 'nvim_lsp' },
+				}, {
+					{ name = 'buffer' },
+				}),
+				mapping = {
+					['<CR>'] = cmp.mapping.confirm({ select = true }),
+				},
+			})
+		end
 	},
 
 	-- Navigation
