@@ -37,12 +37,17 @@ client.placeholder      #000000 #1d2021 #ffffff #000000   #1d2021
 
 client.background       #ffffff
 
+# --------------
+# Set background (device-specific)
+# --------------
+
+include background.conf
+
 # -------
 # Startup
 # -------
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/DSC_0018.JPG
 exec_always --no-startup-id picom -b
 
 # -----------
