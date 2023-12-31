@@ -7,14 +7,13 @@ return {
 	-- Aesthetics
 	{
 		-- Main colorsheme, needs to load before all other plugins
-		"sainnhe/sonokai",
+		"zacanger/angr.vim",
 		lazy = false,
 		priority = 1000,
 		config = function()
 			vim.opt.termguicolors = true
 			vim.opt.background = 'dark'
-			vim.g.sonokai_style = "espresso"
-			vim.cmd [[ colorscheme sonokai ]]
+			vim.cmd [[ colorscheme angr ]]
 		end,
 	},
 	"luochen1990/rainbow",
@@ -29,7 +28,7 @@ return {
 		config = function()
 			require("lualine").setup({
 				options = {
-					theme = "sonokai",
+					theme = "auto",
 				},
 			})
 		end,
@@ -47,7 +46,7 @@ return {
 		lazy = false,
 		config = function()
 			require('nvim-treesitter.configs').setup({
-			  ensure_installed = { "c", "lua", "cpp" },
+			  ensure_installed = { "c", "lua", "cpp", "markdown" },
 			  sync_install = false,
 			  auto_install = false,
 			  highlight = {
