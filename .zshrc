@@ -40,6 +40,7 @@ export GEM_HOME="$(gem env user_gemhome)"
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$GEM_HOME
 export PATH=$PATH:$HOME/.nimble/bin
+export PATH=$PATH:$GOPATH/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
