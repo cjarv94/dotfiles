@@ -8,6 +8,11 @@ local lua_config_dir = os.getenv("HOME") .. "/.config/nvim/lua/"
 nm("<Leader>sv", ":source $MYVIMRC<CR>")                           -- Edit vim config in new tab
 nm("<Leader>ev", ":tabedit " .. lua_config_dir .. "<CR>")          -- Source vim config
 
+-- Keep text in center --
+--
+nm("j", "jzz")
+nm("k", "kzz")
+
 -- Tab mappings --
 --
 nm("<Leader>t", ":tabnew<CR>")                                      -- Open a new tab
