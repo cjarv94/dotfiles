@@ -27,3 +27,7 @@ nm("<C-n>", ":nohlsearch<CR>")
 --
 nm("tt", ":terminal<CR>")                                           -- Open a terminal
 tm("<C-o>", "<C-\\><C-n>")                                          -- Go to normal mode from terminal mode
+
+-- Kill neovide process
+-- (often hangs when exiting normally)
+nm("<Leader>Q", ":!killall neovide<CR>")
