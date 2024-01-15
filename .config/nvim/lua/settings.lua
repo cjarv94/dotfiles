@@ -5,6 +5,8 @@ opt.autoread = true -- Autoload changes in files
 
 opt.termguicolors = true
 
+opt.guifont = "RobotoMono Nerd Font Mono:h20"
+
 opt.colorcolumn = "80"
 opt.hlsearch = true -- Highlight search options
 
