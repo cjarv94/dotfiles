@@ -1,5 +1,4 @@
 {
-  "angr.vim": { "branch": "master", "commit": "14fc1057dac738874cba5166c1c937878ed5b9d5" },
   "bufferline.nvim": { "branch": "main", "commit": "1a3397556d194bb1f2cc530b07124ccc512c5501" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-cmdline": { "branch": "main", "commit": "8ee981b4a91f536f52add291594e89fb6645e451" },
@@ -18,7 +17,6 @@
   "odin.vim": { "branch": "master", "commit": "0d738ff893ba1a1e1b944feedf3451df8b2ff744" },
   "plenary.nvim": { "branch": "master", "commit": "55d9fe89e33efd26f532ef20223e5f9430c8b0c0" },
   "rainbow": { "branch": "master", "commit": "61f719aebe0dc5c3048330c50db72cfee1afdd34" },
-  "sonokai": { "branch": "master", "commit": "bdce098fc9e7202d3c555e2dc98c755ca1c23835" },
   "telescope.nvim": { "branch": "master", "commit": "5f18f3dc5106cc469864a51b879b112bfb496a79" },
   "tmux.nvim": { "branch": "main", "commit": "ea67d59721eb7e12144ce2963452e869bfd60526" },
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
@@ -32,5 +30,6 @@
   "vim-slime": { "branch": "main", "commit": "a532203bcd7af7f5e571c07b60bba7287076dc19" },
   "vim-snippets": { "branch": "master", "commit": "ec4ff7e9c9b274e93295924e59c82b4f51e2ae42" },
   "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
-  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" }
+  "vim-vinegar": { "branch": "master", "commit": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6" },
+  "vscode.nvim": { "branch": "main", "commit": "39841d05ab4a5c03ea0985196b9f3dfa48d83411" }
 }

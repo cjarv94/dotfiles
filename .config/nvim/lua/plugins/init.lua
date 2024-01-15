@@ -7,13 +7,13 @@ return {
 	-- Aesthetics
 	{
 		-- Main colorsheme, needs to load before all other plugins
-		"zacanger/angr.vim",
+		"https://github.com/Mofiqul/vscode.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
 			vim.opt.termguicolors = true
 			vim.opt.background = 'dark'
-			vim.cmd [[ colorscheme angr ]]
+			vim.cmd [[ colorscheme vscode ]]
 		end,
 	},
 	"luochen1990/rainbow",
