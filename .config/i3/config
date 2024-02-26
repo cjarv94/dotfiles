@@ -143,13 +143,3 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-# -----
-# i3bar
-# -----
-
-bar {
-	status_command i3status
-	position bottom
-	mode hide
-}
