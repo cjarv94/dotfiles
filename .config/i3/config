@@ -26,23 +26,6 @@ font pango:CaskaydiaCove NFM 20
 default_border pixel 1
 default_floating_border pixel 1
 
-# Set colors
-# from https://i3wm.org/docs/userguide.html#client_colors
-# class                 border  backgr. text    indicator child_border
-client.focused          #45707a #45707a #ffffff #d3869b   #89b482
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #c14a4a #ffffff #c14a4a   #900000
-client.placeholder      #000000 #1d2021 #ffffff #000000   #1d2021
-
-client.background       #ffffff
-
-# --------------
-# Set background (device-specific)
-# --------------
-
-include background.conf
-
 # -------
 # Startup
 # -------
