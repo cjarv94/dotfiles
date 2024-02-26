@@ -34,6 +34,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id redshift -PO 3500K
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Trees.webp
+exec_always --no-startup-id bash $HOME/.config/polybar/launch.sh --cuts
 
 # -----------
 # Keybindings
