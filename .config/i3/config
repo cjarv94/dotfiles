@@ -32,7 +32,7 @@ default_floating_border pixel 1
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id picom -b
-exec --no-startup-id redshift -PO 3500K
+exec_always --no-startup-id redshift -PO 3500K
 
 # -----------
 # Keybindings
