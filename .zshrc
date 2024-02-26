@@ -25,7 +25,7 @@ source $ZSH/oh-my-zsh.sh
 # variables
 
 export DOTFILES_DIR=$HOME/dotfiles
-export EDITOR='nvim'
+export EDITOR='vim'
 
 # aliases
 

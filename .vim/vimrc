@@ -1,0 +1,52 @@
+vim9script
+
+packadd ctrlp
+packadd commentary
+packadd dispatch
+packadd fugitive
+packadd surround
+packadd vinegar
+packadd ycm
+packadd maximizer
+packadd clang-format
+
+filetype plugin indent on
+set belloff
+set autoread
+
+syntax on
+set background=dark
+set termguicolors
+g:badwolf_darkgutter = 1
+g:badwolf_tabline = 2
+colorscheme badwolf
+hi Normal guibg=NONE
+hi NonText guibg=NONE
+
+set relativenumber
+set numberwidth=4
+
+g:mapleader = ','
+
+nnoremap <Leader>sv :source $MYVIMRC<CR>
+nnoremap <Leader>ev :split $MYVIMRC<CR>
+nnoremap <Leader>sp :!bash $HOME/.vim/install_plugins.sh<CR>
+nnoremap <Leader>ep :split $HOME/.vim/install_plugins.sh<CR>
+
+nnoremap <Leader>f :Lexplore 20<CR>
+
+nnoremap tt :terminal<CR>
+tnoremap <C-o> <C-\><C-n>
+
+nnoremap mm :MaximizerToggle<CR>
+
+nnoremap <C-h> <C-w><C-h>
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
+
+nnoremap <Leader>t :tabedit<CR>
+nnoremap <S-h> :tabprev<CR>
+nnoremap <S-l> :tabnext<CR>
+
+nnoremap K :YcmCompleter GetDoc<CR>
