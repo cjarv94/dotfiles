@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if tmux attach ; then
+	echo "Do nothing" > /dev/null
+else
+	tmux
+fi
