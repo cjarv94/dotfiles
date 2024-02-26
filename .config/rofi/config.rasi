@@ -3,4 +3,4 @@ configuration {
 	combi-modes: [ window, drun, run ];
 }
 
-@theme "gruvbox-dark-hard"
+@theme "/usr/share/rofi/themes/sidebar.rasi"
